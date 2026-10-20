@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Academia NOOVA | Muy pronto</title>
+<meta name="description" content="Talleres de remodelación, iluminación, domótica, materiales y herramientas. La Academia NOOVA abre muy pronto.">
+<meta name="theme-color" content="#08080B">
+<meta property="og:title" content="Academia NOOVA | Muy pronto">
+<meta property="og:description" content="Aprende a transformar espacios con talleres prácticos de NOOVA Designs.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('off');</script>
+<style>
+@property --lit{syntax:'<number>';inherits:true;initial-value:1}
+:root{color-scheme:dark;--bg:#08080B;--surface:#14141B;--text:#F4F0EB;--text-2:#B7B3C1;--dim:#8A8696;--violet:#8B5CF6;--fucsia:#E447B3;--border:#30303A;--cyan:#93F4F8;--lila:#AD48FB;--logo:linear-gradient(110deg,var(--cyan),var(--lila));--grad:linear-gradient(110deg,var(--violet),var(--fucsia));--lit:1;--x:55vw;--y:60vh;--hx:30%;--hy:50%;--s:1;--pad:64px;--rail:24px;transition:--lit 1.6s ease}
+:root.off{--lit:0}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--text);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+.glow{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:var(--lit);background:radial-gradient(520px circle at var(--x) var(--y),rgba(147,244,248,.08),transparent 70%),radial-gradient(900px circle at var(--x) var(--y),rgba(173,72,251,.12),transparent 70%)}
+.lamp{position:fixed;top:0;left:50vw;width:0;height:0;z-index:1;pointer-events:none}
+.fx{position:absolute;left:0;top:0}
+.swing{position:absolute;top:var(--rail);left:0;transform-origin:0 0;will-change:transform}
+.scale{position:absolute;left:0;top:0;transform:scale(var(--s));transform-origin:0 0}
+.fxsvg{position:absolute;top:0;left:-60px;width:120px;height:90px;overflow:visible}
+.lamp-btn{position:absolute;left:-32px;top:14px;width:64px;height:52px;background:transparent;border:0;border-radius:8px;cursor:pointer;pointer-events:auto}
+.lamp-btn:focus-visible,.social a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.rail{position:absolute;top:0;height:var(--rail);background:linear-gradient(#1C1C26,var(--surface));border:1px solid var(--border);border-top:0;border-radius:0 0 8px 8px}
+.rail::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--logo);opacity:.8}
+.cap{position:fixed;right:max(3vw,16px);bottom:max(9vh,64px);width:min(46vw,640px);aspect-ratio:4/3;z-index:1;pointer-events:none}
+.cap svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.cap .lit{opacity:calc(.9*var(--lit));-webkit-mask-image:radial-gradient(circle 420px at var(--cx,50%) var(--cy,50%),#000 0%,rgba(0,0,0,.6) 45%,transparent 100%);mask-image:radial-gradient(circle 420px at var(--cx,50%) var(--cy,50%),#000 0%,rgba(0,0,0,.6) 45%,transparent 100%)}
+.cap-base .t,.cap-base .s,.cap-base .b{fill:#0C0C12;stroke:#2A2A34;stroke-width:1.5}
+.cap-base .c{fill:none;stroke:#2A2A34;stroke-width:3;stroke-linecap:round}
+.cap-base .k{fill:#16161E}
+.lit .t{fill:url(#capt);stroke:url(#capg);stroke-width:2.5}
+.lit .s{fill:#4A4756;stroke:url(#capg);stroke-width:2}
+.lit .b{fill:#3A3845;stroke:url(#capg);stroke-width:2}
+.lit .c{fill:none;stroke:url(#capg);stroke-width:3;stroke-linecap:round}
+.lit .k{fill:#F4F0EB}
+@media (max-width:767px){.cap{width:84vw;right:-8vw;bottom:14vh}}
+.page{position:relative;z-index:2;filter:brightness(calc(.4 + .6*var(--lit)));min-height:100svh;display:flex;flex-direction:column;padding:max(28px,env(safe-area-inset-top)) var(--pad) max(28px,env(safe-area-inset-bottom));max-width:1280px;margin:0 auto}
+.brand{font-weight:500;font-size:20px;letter-spacing:.42em}
+.brand span{letter-spacing:.3em;font-size:12px;margin-left:.9em;color:var(--cyan)}
+@supports (background-clip:text) or (-webkit-background-clip:text){.brand span,.topics b,.kicker{background:var(--logo);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
+main{flex:1;display:flex;flex-direction:column;justify-content:flex-end;padding:15vh 0 48px}
+.kicker{display:inline-flex;align-items:center;gap:12px;font-size:13px;font-weight:600;letter-spacing:.24em;color:var(--cyan);margin-bottom:22px;align-self:flex-start}
+.kicker::before{content:"";width:36px;height:1px;background:var(--logo);-webkit-text-fill-color:initial}
+h1{font-weight:500;line-height:1.04;letter-spacing:-.02em;font-size:clamp(38px,7.2vw,84px);max-width:13ch;color:var(--text)}
+@supports (background-clip:text) or (-webkit-background-clip:text){h1{background:radial-gradient(circle calc(440px*var(--lit) + 1px) at var(--hx) var(--hy),#F4F0EB 0%,#C9C4CF 40%,var(--dim) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
+.lead{margin-top:26px;max-width:58ch;color:#DAD6E0;font-size:clamp(16px,1.6vw,19px);line-height:1.65}
+.topics{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin-top:30px}
+.topics li{position:relative;display:inline-flex;align-items:baseline;gap:10px;padding:10px 16px;font-size:15px;font-weight:500;background:rgba(20,20,27,.6);border-radius:999px}
+.topics li::before,.social a::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;background:var(--logo);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask:linear-gradient(#000 0 0) content-box exclude,linear-gradient(#000 0 0);opacity:.5;transition:opacity .2s}
+.topics b{font-size:11px;font-weight:600;letter-spacing:.12em;color:var(--cyan)}
+.social{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.social a{position:relative;display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;color:var(--text);text-decoration:none;font-size:15px;font-weight:500;letter-spacing:.04em;background:rgba(20,20,27,.6);border-radius:8px;transition:background .2s,transform .2s}
+.social a:hover{background:var(--surface)}
+.social a:hover::before{opacity:1}
+.social a:active{transform:scale(.98)}
+.social svg{width:20px;height:20px;flex:none}
+footer{padding-top:24px;position:relative}
+.line{position:absolute;top:0;left:0;height:1px;width:100%;background:var(--logo);transform-origin:left;opacity:.9}
+footer p{color:var(--text-2);font-size:15px}
+footer strong{color:var(--text);font-weight:600;letter-spacing:.18em}
+footer .credit{margin-top:28px;text-align:center;font-size:13px;letter-spacing:.06em;color:var(--dim)}
+@media (prefers-reduced-motion:no-preference){
+.line{animation:draw 1.6s cubic-bezier(.2,.7,.2,1) both}
+.fx{animation:drop 1.3s cubic-bezier(.2,.8,.2,1) .15s both}
+.brand,.kicker,h1,.lead,.topics,.social,footer p{animation:rise .9s ease both}
+.brand{animation-delay:.2s}.kicker{animation-delay:.6s}h1{animation-delay:.9s}.lead{animation-delay:1.2s}.topics{animation-delay:1.4s}.social{animation-delay:1.55s}footer p{animation-delay:1.6s}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes drop{from{transform:translateY(-130%)}to{transform:none}}}
+@media (max-width:1023px){:root{--pad:32px}main{padding-top:12vh}}
+@media (max-width:767px){:root{--pad:20px}.brand{font-size:17px}.brand span{display:none}main{padding-bottom:40px}}
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<linearGradient id="cone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4F0EB" stop-opacity=".22"/><stop offset="1" stop-color="#F4F0EB" stop-opacity="0"/></linearGradient>
+<linearGradient id="rim" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#93F4F8"/><stop offset="1" stop-color="#AD48FB"/></linearGradient>
+<radialGradient id="halo"><stop offset="0" stop-color="#F4F0EB" stop-opacity=".8"/><stop offset=".35" stop-color="#AD48FB" stop-opacity=".22"/><stop offset=".7" stop-color="#E447B3" stop-opacity=".06"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+<linearGradient id="capg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="400" y2="0"><stop offset="0" stop-color="#93F4F8"/><stop offset="1" stop-color="#AD48FB"/></linearGradient>
+<linearGradient id="capt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E6E1E8"/><stop offset="1" stop-color="#8A8696"/></linearGradient>
+</defs></svg>
+
+<div class="cap" id="cap" aria-hidden="true">
+<svg class="cap-base" viewBox="0 0 400 300" focusable="false"><g class="capart"></g></svg>
+<svg class="lit" viewBox="0 0 400 300" focusable="false"><g class="capart"></g></svg>
+</div>
+
+<div class="lamp" id="lamp"><div class="fx">
+<div class="swing" data-off="-2"><div class="scale"><svg class="fxsvg" viewBox="-60 0 120 90" aria-hidden="true" focusable="false"><g class="spot-art"></g></svg></div></div>
+<div class="swing" data-off="-1"><div class="scale"><svg class="fxsvg" viewBox="-60 0 120 90" aria-hidden="true" focusable="false"><g class="spot-art"></g></svg></div></div>
+<div class="swing" data-off="0"><div class="scale"><svg class="fxsvg" viewBox="-60 0 120 90" aria-hidden="true" focusable="false"><g class="spot-art"></g></svg><button class="lamp-btn" type="button" aria-label="Encender la luz"></button></div></div>
+<div class="swing" data-off="1"><div class="scale"><svg class="fxsvg" viewBox="-60 0 120 90" aria-hidden="true" focusable="false"><g class="spot-art"></g></svg></div></div>
+<div class="swing" data-off="2"><div class="scale"><svg class="fxsvg" viewBox="-60 0 120 90" aria-hidden="true" focusable="false"><g class="spot-art"></g></svg></div></div>
+<div class="rail" id="rail"></div>
+</div></div>
+
+<div class="page">
+<header><div class="brand" aria-label="Academia NOOVA">NOOVA<span>ACADEMIA</span></div></header>
+<main>
+<div class="kicker">MUY PRONTO</div>
+<h1 id="titular">Aprende a transformar espacios.</h1>
+<p class="lead">Estamos preparando la Academia NOOVA: talleres prácticos donde aprenderás, de la mano de quienes lo hacen cada día, cómo se piensa y se construye un espacio con identidad, confort y estilo.</p>
+<ul class="topics" aria-label="Temas de los talleres">
+<li><b>01</b>Remodelación</li><li><b>02</b>Iluminación</li><li><b>03</b>Domótica</li><li><b>04</b>Materiales</li><li><b>05</b>Herramientas</li>
+</ul>
+<nav class="social" aria-label="Redes sociales">
+<a href="https://web.facebook.com/noovadomoticaeiluminacioninteligente" target="_blank" rel="noopener noreferrer" aria-label="Facebook de NOOVA (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg>Facebook</a>
+<a href="https://www.instagram.com/noova.domotica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de NOOVA (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
+</nav>
+</main>
+<footer>
+<div class="line" aria-hidden="true"></div>
+<p><strong>ACADEMIA NOOVA</strong> — Aprende a diseñar espacios que se ven y se sienten diferentes.</p>
+<p class="credit">© Vanmartc Developments</p>
+</footer>
+</div>
+
+<script>
+(function(){
+var root=document.documentElement,h1=document.getElementById('titular'),lamp=document.getElementById('lamp'),rail=document.getElementById('rail'),btn=document.querySelector('.lamp-btn');
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var CABLE=20; /* largo del cable en px, medido desde la cara inferior del riel */
+var SPOT='<g style="opacity:var(--lit)"><polygon points="-9,'+(CABLE+44)+' 9,'+(CABLE+44)+' -95,'+(CABLE+1086)+' 95,'+(CABLE+1086)+'" fill="url(#cone)"/><circle cx="0" cy="'+(CABLE+46)+'" r="44" fill="url(#halo)"/></g><line x1="0" y1="0" x2="0" y2="'+CABLE+'" stroke="#30303A" stroke-width="2"/><rect x="-12" y="'+(CABLE-2)+'" width="24" height="44" rx="5" fill="#14141B" stroke="#30303A"/><rect x="-12" y="'+(CABLE+40)+'" width="24" height="1.6" fill="url(#rim)"/><ellipse cx="0" cy="'+(CABLE+44)+'" rx="9" ry="3" fill="#F4F0EB" style="opacity:calc(.2 + .8 * var(--lit))"/>';
+btn.style.top=(CABLE-6)+'px';
+var capEl=document.getElementById('cap');
+var CAP='<g transform="rotate(-6 200 150)"><path class="b" d="M100 150 L200 190 L300 150 L300 212 C300 252 100 252 100 212 Z"/><path class="s" d="M20 110 L200 180 L200 202 L20 132 Z"/><path class="s" d="M380 110 L200 180 L200 202 L380 132 Z"/><path class="t" d="M200 40 L380 110 L200 180 L20 110 Z"/><circle class="k" cx="200" cy="110" r="7"/><path class="c" d="M200 110 L338 124 L338 214"/><path class="s" d="M330 214 h16 l5 52 h-26 z"/><path class="c" style="stroke-width:1.5" d="M334 230 v32 M342 230 v32"/></g>';
+[].forEach.call(document.querySelectorAll('.capart'),function(g){g.innerHTML=CAP});
+[].forEach.call(document.querySelectorAll('.spot-art'),function(g){g.innerHTML=SPOT});
+var fx=[].map.call(document.querySelectorAll('.swing'),function(el,i){return{el:el,off:+el.getAttribute('data-off'),ang:0,vel:0,k:.010+i*.0013}});
+var center=0;fx.forEach(function(f,i){if(f.off===0)center=i});
+var w=innerWidth,h=innerHeight,lx=w*.5,sp=104,tx=w*.55,ty=h*.6,cx=tx,cy=ty,last=-1e9,raf=null,touched=false;
+function layout(){w=innerWidth;h=innerHeight;var m=w<768;lx=w*.5;lamp.style.left=lx+'px';root.style.setProperty('--s',m?'.8':'1');sp=m?58:104;
+fx.forEach(function(f){f.el.style.left=(f.off*sp)+'px'});rail.style.left=-(2*sp+44)+'px';rail.style.width=(4*sp+88)+'px'}
+function label(){btn.setAttribute('aria-label',root.classList.contains('off')?'Encender la luz':'Apagar la luz')}
+btn.addEventListener('click',function(){touched=true;root.classList.toggle('off');label()});
+label();
+if(root.classList.contains('off'))setTimeout(function(){if(!touched){root.classList.remove('off');label()}},1700);
+addEventListener('resize',layout);
+addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY;last=performance.now();start()},{passive:true});
+function frame(t){
+if(!reduce&&t-last>3500){tx=lx+w*.30*Math.sin(t/4200);ty=h*(.62+.10*Math.sin(t/5600+1))}
+cx+=(tx-cx)*.08;cy+=(ty-cy)*.08;
+var settled=Math.abs(tx-cx)<.5&&Math.abs(ty-cy)<.5;
+fx.forEach(function(f){var fl=lx+f.off*sp;var want=Math.max(-.6,Math.min(.6,Math.atan2(cx-fl,Math.max(cy,h*.25))));
+if(reduce){f.ang+=(want-f.ang)*.2;f.vel=0}else{f.vel=(f.vel+(want-f.ang)*f.k)*.93;f.ang+=f.vel}
+f.el.style.transform='rotate('+(-f.ang)+'rad)';
+if(Math.abs(want-f.ang)>.002||Math.abs(f.vel)>.0005)settled=false});
+var c=fx[center],d=Math.max(h*.4,Math.min(h*.95,Math.hypot(cx-lx,cy)));
+var px=lx+d*Math.sin(c.ang),py=d*Math.cos(c.ang);
+root.style.setProperty('--x',px+'px');root.style.setProperty('--y',py+'px');
+var r=h1.getBoundingClientRect();
+root.style.setProperty('--hx',(px-r.left)+'px');root.style.setProperty('--hy',(py-r.top)+'px');
+var cr=capEl.getBoundingClientRect();root.style.setProperty('--cx',(px-cr.left)+'px');root.style.setProperty('--cy',(py-cr.top)+'px');
+raf=(reduce&&settled)?null:requestAnimationFrame(frame)}
+function start(){if(!raf)raf=requestAnimationFrame(frame)}
+document.addEventListener('visibilitychange',function(){if(document.hidden&&raf){cancelAnimationFrame(raf);raf=null}else start()});
+layout();start();
+})();
+</script>
+</body>
+</html>
