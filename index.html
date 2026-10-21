@@ -2,29 +2,12 @@
 <html lang="es">
 
 <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <title>Academia NOOVA | Muy pronto</title>
+    <title>NOOVA Academy | Muy pronto</title>
     <meta name="description" content="Talleres de remodelación, iluminación, domótica, materiales y herramientas. La Academia NOOVA abre muy pronto.">
     <meta name="theme-color" content="#08080B">
-    <meta property="og:title" content="Academia NOOVA | Muy pronto">
+    <meta property="og:title" content="NOOVA Academy | Muy pronto">
     <meta property="og:description" content="Aprende a transformar espacios con talleres prácticos de NOOVA Designs.">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +23,7 @@
             initial-value: 1
         }
         
-        :root {
+         :root {
             color-scheme: dark;
             --bg: #08080B;
             --surface: #14141B;
@@ -65,7 +48,7 @@
             transition: --lit 1.6s ease
         }
         
-        :root.off {
+         :root.off {
             --lit: 0
         }
         
@@ -301,6 +284,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
+            min-height: calc(100svh - 64px);
             padding: 15vh 0 48px
         }
         
@@ -351,6 +335,286 @@
             line-height: 1.65
         }
         
+        @media (prefers-reduced-motion:no-preference) {
+            html {
+                scroll-behavior: smooth
+            }
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px
+        }
+        
+        .nav-about {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .06em;
+            color: var(--text);
+            text-decoration: none;
+            background: rgba(20, 20, 27, .6);
+            border-radius: 999px;
+            transition: background .2s
+        }
+        
+        .nav-about:hover {
+            background: var(--surface)
+        }
+        
+        .nav-about:hover::before {
+            opacity: 1
+        }
+        
+        .nav-about:focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 3px
+        }
+        
+        .scroll-hint {
+            align-self: center;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            min-height: 44px;
+            text-decoration: none;
+            color: var(--text-2);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: .24em;
+            text-transform: uppercase;
+            transition: color .2s
+        }
+        
+        .scroll-hint i {
+            width: 11px;
+            height: 11px;
+            border-right: 2px solid var(--cyan);
+            border-bottom: 2px solid var(--cyan);
+            transform: rotate(45deg)
+        }
+        
+        .scroll-hint:hover {
+            color: var(--text)
+        }
+        
+        .scroll-hint:focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 6px;
+            border-radius: 8px
+        }
+        
+        @media (max-width:767px) {
+            .nav-about {
+                min-height: 40px;
+                padding: 0 14px;
+                font-size: 13px
+            }
+        }
+        
+        .about {
+            scroll-margin-top: -20px;
+            padding: 72px 0 56px;
+            display: grid;
+            grid-template-columns: 1fr 1.15fr;
+            gap: 40px 64px;
+            align-items: start
+        }
+        
+        .about h2 {
+            font-weight: 500;
+            line-height: 1.12;
+            letter-spacing: -.02em;
+            font-size: clamp(28px, 3.6vw, 46px);
+            color: var(--text);
+            max-width: 16ch
+        }
+        
+        @supports (background-clip:text) or (-webkit-background-clip:text) {
+            .about h2 span {
+                background: var(--logo);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                -webkit-text-fill-color: transparent
+            }
+        }
+        
+        .about p {
+            color: #DAD6E0;
+            font-size: clamp(16px, 1.5vw, 18px);
+            line-height: 1.7;
+            max-width: 60ch
+        }
+        
+        .about p+p {
+            margin-top: 16px
+        }
+        
+        .about p strong {
+            color: var(--text);
+            font-weight: 600
+        }
+        
+        .trust {
+            list-style: none;
+            padding: 0;
+            margin-top: 28px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px
+        }
+        
+        .trust li {
+            position: relative;
+            padding: 18px 18px 20px;
+            background: rgba(20, 20, 27, .6);
+            border-radius: 12px
+        }
+        
+        .trust b {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px
+        }
+        
+        .trust span {
+            display: block;
+            font-size: 14px;
+            line-height: 1.55;
+            color: var(--text-2)
+        }
+        
+        @media (max-width:1023px) {
+            .about {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 56px 0 40px
+            }
+        }
+        
+        @media (max-width:767px) {
+            .trust {
+                grid-template-columns: 1fr
+            }
+            .about {
+                padding: 48px 0 32px
+            }
+        }
+        
+        .req {
+            margin-top: 16px;
+            max-width: 58ch;
+            font-size: 15px;
+            line-height: 1.55;
+            color: #DAD6E0
+        }
+        
+        .req strong {
+            color: var(--text);
+            font-weight: 600
+        }
+        
+        .more {
+            margin-top: 14px;
+            max-width: 58ch
+        }
+        
+        .more summary {
+            position: relative;
+            list-style: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            min-height: 44px;
+            padding: 0 20px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: .06em;
+            color: var(--cyan);
+            background: rgba(20, 20, 27, .6);
+            border-radius: 999px
+        }
+        
+        .more summary::-webkit-details-marker {
+            display: none
+        }
+        
+        .more summary::after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-right: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            transform: rotate(45deg) translateY(-2px);
+            transition: transform .2s
+        }
+        
+        .more[open] summary::after {
+            transform: rotate(-135deg) translateY(-2px)
+        }
+        
+        .more summary:focus-visible {
+            outline: 2px solid var(--cyan);
+            outline-offset: 3px
+        }
+        
+        .more[open] .m-closed,
+        .more:not([open]) .m-open {
+            display: none
+        }
+        
+        .more-body {
+            margin-top: 16px;
+            padding-left: 20px;
+            border-left: 2px solid;
+            border-image: linear-gradient(180deg, var(--cyan), var(--lila)) 1;
+            color: #DAD6E0;
+            font-size: clamp(15px, 1.5vw, 17px);
+            line-height: 1.65
+        }
+        
+        .more-body p {
+            margin-top: 12px
+        }
+        
+        .more-body p:first-child {
+            margin-top: 0
+        }
+        
+        .more-body ul {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0 4px
+        }
+        
+        .more-body li {
+            position: relative;
+            padding-left: 20px;
+            margin-top: 8px
+        }
+        
+        .more-body li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: .8em;
+            width: 10px;
+            height: 1px;
+            background: var(--logo)
+        }
+        
         .topics {
             display: flex;
             flex-wrap: wrap;
@@ -373,7 +637,10 @@
         }
         
         .topics li::before,
-        .social a::before {
+        .social a::before,
+        .more summary::before,
+        .trust li::before,
+        .nav-about::before {
             content: "";
             position: absolute;
             inset: 0;
@@ -487,6 +754,32 @@
             footer p {
                 animation: rise .9s ease both
             }
+            .nav-about {
+                animation: fade .9s ease .4s both
+            }
+            .scroll-hint {
+                animation: fade .9s ease 1.9s both
+            }
+            .scroll-hint i {
+                animation: bob 1.8s ease-in-out infinite
+            }
+            @keyframes fade {
+                from {
+                    opacity: 0
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            @keyframes bob {
+                0%,
+                100% {
+                    transform: rotate(45deg) translate(0, 0)
+                }
+                50% {
+                    transform: rotate(45deg) translate(4px, 4px)
+                }
+            }
             .brand {
                 animation-delay: .2s
             }
@@ -537,7 +830,7 @@
         }
         
         @media (max-width:1023px) {
-            :root {
+             :root {
                 --pad: 32px
             }
             main {
@@ -546,7 +839,7 @@
         }
         
         @media (max-width:767px) {
-            :root {
+             :root {
                 --pad: 20px
             }
             .brand {
@@ -600,18 +893,33 @@
 
     <div class="page">
         <header>
-            <div class="brand" aria-label="Academia NOOVA">NOOVA<span>ACADEMIA</span></div>
-        </header>
+            <div class="brand" aria-label="NOOVA Academy">NOOVA<span>ACADEMY</span></div>
+            <a class="nav-about" href="#acerca-noova">Acerca de NOOVA</a></header>
         <main>
             <div class="kicker">MUY PRONTO</div>
             <h1 id="titular">Aprende a transformar espacios.</h1>
-            <p class="lead">Estamos preparando la Academia NOOVA: talleres prácticos donde aprenderás, de la mano de quienes lo hacen cada día, cómo se piensa y se construye un espacio con identidad, confort y estilo.</p>
+            <p class="lead">En NOOVA Academy aprenderás domótica con un enfoque práctico, pensado para electricistas y técnicos que quieren ampliar sus competencias, diferenciarse en el mercado y acceder a nuevas oportunidades profesionales.</p>
+            <p class="req"><strong>Requisito de ingreso:</strong> conocimientos previos en electricidad, demostrables con formación, experiencia o habilidades técnicas.</p>
+            <details class="more">
+                <summary><span class="m-closed">Ver más</span><span class="m-open">Ver menos</span></summary>
+                <div class="more-body">
+                    <p>Aprenderás a instalar, configurar e integrar:</p>
+                    <ul>
+                        <li>Relés inteligentes, sensores de movimiento y presencia</li>
+                        <li>Aplicaciones como Smart Life y Tuya, redes Wi-Fi y asistentes de voz como Alexa</li>
+                        <li>Automatización de puertas, cerraduras, persianas y cortinas motorizadas</li>
+                        <li>Sistemas de audio y control de aire acondicionado</li>
+                        <li>Válvulas motorizadas de agua y gas, sistemas de riego y automatización de jacuzzis, siempre con las medidas de seguridad y los requisitos técnicos adecuados</li>
+                        <li>Escenas y rutinas inteligentes, con dispositivos que trabajan en conjunto</li>
+                        <li>Diagnóstico de fallas y solución de problemas reales de instalación y configuración</li>
+                    </ul>
+                    <p>Combinamos fundamentos técnicos con prácticas de laboratorio y ejercicios aplicados: comprenderás cómo funcionan los sistemas y aprenderás haciendo, no solo encendiendo luces desde el celular.</p>
+                    <p>Si ya sabes electricidad y quieres crecer con la tecnología, aquí puedes empezar esa nueva etapa profesional.</p>
+                </div>
+            </details>
             <ul class="topics" aria-label="Temas de los talleres">
                 <li>Domótica</li>
                 <li>Redes WiFi</li>
-                <li>Instalaciones eléctricas</li>
-                <li>Tableros eléctricos</li>
-                <li>Cableado estructurado</li>
                 <li>Iluminación inteligente</li>
                 <li>Automatización</li>
                 <li>Cámaras de seguridad</li>
@@ -623,10 +931,30 @@
                 <a href="https://www.instagram.com/noova.domotica/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de NOOVA (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none"/></svg>Instagram</a>
                 <a href="https://www.youtube.com/@noovasmartliving" target="_blank" rel="noopener noreferrer" aria-label="YouTube de NOOVA (se abre en una pestaña nueva)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2 L15.2 12 L10 14.8 Z" fill="currentColor" stroke="none"/></svg>YouTube</a>
             </nav>
+            <a class="scroll-hint" href="#acerca-noova"><span>Descubre más</span><i aria-hidden="true"></i></a>
         </main>
+
+        <section class="about" id="acerca-noova" aria-labelledby="acerca">
+            <div>
+                <div class="kicker">ACERCA DE NOOVA</div>
+                <h2 id="acerca">Tecnología con propósito. <span>Conocimiento que transforma espacios.</span></h2>
+            </div>
+            <div>
+                <p>NOOVA es una marca especializada en domótica, iluminación inteligente e integración de tecnologías para espacios residenciales y comerciales.</p>
+                <p>Creemos que la tecnología debe mejorar la vida en casa y en tu negocio, sin complicarte y creando espacios que se sientan bien. Por eso compartimos nuestra experiencia para formarte en instalación, configuración e integración de sistemas
+                    inteligentes, con un enfoque técnico, profesional y real.</p>
+                <p><strong>Enseñamos de la vida real, con instalaciones reales</strong>, para que trabajes con seguridad y buen criterio.</p>
+                <ul class="trust">
+                    <li><b>Experiencia de campo</b><span>Una formación creada desde proyectos residenciales y comerciales.</span></li>
+                    <li><b>Instalaciones reales</b><span>Aprendes con casos y prácticas de la vida real, no solo con teoría.</span></li>
+                    <li><b>Seguridad y buen criterio</b><span>Trabajas con las medidas de seguridad y los requisitos técnicos adecuados.</span></li>
+                </ul>
+            </div>
+        </section>
+
         <footer>
             <div class="line" aria-hidden="true"></div>
-            <p><strong>ACADEMIA NOOVA</strong> — Aprende a diseñar espacios que se ven y se sienten diferentes.</p>
+            <p><strong>NOOVA ACADEMY</strong> — Aprende a diseñar espacios que se ven y se sienten diferentes.</p>
             <p class="credit">© Vanmartc Developments</p>
         </footer>
     </div>
