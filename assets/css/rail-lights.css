@@ -1,0 +1,9 @@
+/* ===== Riel de luces NOOVA (compartido) ===== */
+.nrail{position:fixed;top:0;left:0;right:0;height:22px;z-index:3;pointer-events:none}
+.nrail::before{content:"";position:absolute;inset:0 3vw;border-radius:0 0 8px 8px;background:linear-gradient(#14141C,#2A2A3A)}
+.nrail::after{content:"";position:absolute;left:3vw;right:3vw;bottom:0;height:2px;background:linear-gradient(110deg,#93F4F8,#AD48FB);opacity:calc(.35 + .65*var(--lit,1))}
+.nl{position:absolute;top:22px;left:var(--k);width:0;height:0;transform-origin:0 0;transform:rotate(var(--a,0deg))}
+.nl::before{content:"";position:absolute;left:-1px;top:-22px;width:2px;height:30px;background:#2A2A3A}
+.nl b{position:absolute;left:-15px;top:6px;width:30px;height:20px;border-radius:5px 5px 15px 15px;background:linear-gradient(#34344A,#14141C);box-shadow:inset 0 -4px 6px -2px rgba(147,244,248,calc(var(--lit,1)*.9)),0 6px 22px 2px rgba(173,72,251,calc(var(--lit,1)*.55))}
+.nl i{position:absolute;left:-120px;top:24px;width:240px;height:min(62vh,460px);clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);background:linear-gradient(rgba(173,72,251,.30),rgba(147,244,248,.08) 55%,transparent);opacity:var(--lit,1)}
+@media (max-width:1023px){.nl:not(.nl-c){display:none}}

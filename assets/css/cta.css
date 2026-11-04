@@ -1,0 +1,22 @@
+/* ===== Botón al curso ===== */
+.cta-wrap{margin-top:30px;align-self:flex-start}
+.cta{position:relative;display:inline-flex;align-items:center;gap:18px;min-height:64px;padding:12px 14px 12px 28px;border-radius:999px;color:#fff;text-decoration:none;background:linear-gradient(110deg,#6D28D9,#C026D3);box-shadow:0 14px 38px -12px rgba(109,40,217,.7),inset 0 0 0 1px rgba(255,255,255,.18);transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 20px 46px -10px rgba(192,38,211,.75),inset 0 0 0 1px rgba(255,255,255,.28)}
+.cta:active{transform:scale(.98)}
+.cta:focus-visible{outline:3px solid var(--text);outline-offset:4px}
+.cta-t{display:flex;flex-direction:column;text-align:left}
+.cta-t b{font-size:clamp(17px,2.2vw,20px);font-weight:600;letter-spacing:.01em;line-height:1.2}
+.cta-t small{font-size:13px;font-weight:500;opacity:.9;letter-spacing:.02em}
+.cta-ic{flex:none;width:40px;height:40px;border-radius:50%;background:#fff;color:#6D28D9;display:grid;place-items:center}
+.cta-ic svg{width:18px;height:18px;transition:transform .2s}
+.cta:hover .cta-ic svg{transform:translateX(3px)}
+.cta::after{content:"";position:absolute;inset:-5px;border-radius:inherit;border:2px solid #AD48FB;opacity:0;pointer-events:none}
+.cta-note{margin-top:14px;font-size:14px;color:var(--text-2)}
+.cta--sm{min-height:54px;padding:8px 10px 8px 22px;margin-top:28px}
+.cta--sm .cta-ic{width:34px;height:34px}
+.hd-r{display:flex;align-items:center;gap:10px}
+.hd-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:14px;font-weight:600;letter-spacing:.06em;color:#fff;text-decoration:none;background:linear-gradient(110deg,#6D28D9,#C026D3);box-shadow:0 8px 22px -10px rgba(109,40,217,.8)}
+.hd-cta:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+@media (prefers-reduced-motion:no-preference){.cta::after{animation:ring 2.4s ease-out 2.2s infinite}.cta-wrap{animation:rise .9s ease 1.3s both}@keyframes ring{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.12,1.4)}}}
+@media (max-width:767px){.cta-wrap{align-self:stretch}.cta{display:flex;width:100%;justify-content:space-between;padding-left:22px}.hd-cta{padding:0 16px;font-size:13px}}
+@media (max-width:767px){.hd-cta--hide-sm{display:none}}

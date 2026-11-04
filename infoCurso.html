@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Curso de Domótica | NOOVA Academy</title>
+    <meta name="description" content="Curso presencial de domótica en Manizales: 16 horas, 4 clases y un laboratorio completo. Red Wi-Fi, escenas con Smart Life, Tuya y Alexa, automatizaciones, cierre de llaves de agua y gas y corte de energía del tablero principal.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#08080B">
+    <meta name="color-scheme" content="dark">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Curso de Domótica | NOOVA Academy">
+    <meta property="og:description" content="Domótica desde cero en un laboratorio completo. Para electricistas, técnicos, tecnólogos, ingenieros y arquitectos.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&display=swap">
+    <!--
+  NOOVA Academy · Portafolio del Curso de Domótica
+  Notas para montarlo en academy.noovadesigns.com:
+  1. WhatsApp: en assets/js/config.js, cambiar "whatsapp" por el número de NOOVA
+     con indicativo y sin "+" ni espacios (ej. 573001234567). Mientras no esté, el formulario
+     muestra un aviso y el mensaje que se enviaría.
+  2. Opcional: "registroEndpoint" (config.js) recibe cada registro en JSON (por ejemplo, un Google Apps Script
+     que lo guarde en una hoja de cálculo). También se dispara el evento "nc:registro" y, si
+     están instalados, fbq('track','Lead') y gtag('event','generate_lead').
+  3. Todo el estilo vive dentro de .nc y las clases empiezan por "nc-", así que se puede pegar
+     como sección sin chocar con el resto del sitio. Si el sitio ya tiene encabezado o pie,
+     se pueden quitar <header class="nc-index-header"> y <footer class="nc-foot">.
+  4. El encabezado reutiliza los estilos compartidos con la página de inicio.
+-->
+    <script src="assets/js/boot.js"></script>
+    <link rel="stylesheet" href="assets/css/curso.css">
+    <link rel="stylesheet" href="assets/css/site-header.css">
+    <link rel="stylesheet" href="assets/css/cta.css">
+    <link rel="stylesheet" href="assets/css/rail-lights.css">
+    <link rel="stylesheet" href="assets/css/curso-lights.css">
+</head>
+
+<body>
+    <div class="nc">
+        <div class="nglow" aria-hidden="true"></div>
+        <div class="nrail" aria-hidden="true">
+            <span class="nl nl-c" style="--k:90%" data-k="90"><i></i><b></b></span>
+        </div>
+
+        <header class="nc-index-header">
+            <div class="nc-index-header-in">
+                <a class="brand" href="index.html" aria-label="Academia NOOVA, volver al inicio"><img class="brand-logo" src="assets/img/noova-logo.png" alt="">NOOVA<span>ACADEMIA</span></a>
+                <div class="hd-r"><a class="hd-cta hd-cta--hide-sm" href="#registro">Registrarme</a></div>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- ============ HERO ============ -->
+            <section class="nc-hero" aria-labelledby="nc-titulo">
+                <div class="nc-wrap nc-hero-grid">
+                    <div>
+                        <p class="nc-kicker">Curso presencial de domótica</p>
+                        <h1 class="nc-h1" id="nc-titulo">De la instalación eléctrica a la casa inteligente.</h1>
+                        <p class="nc-lead">En 16&nbsp;horas aprendes desde cero a configurar la red <span class="nc-nw">Wi-Fi</span>, crear escenas con Smart Life, Tuya y Alexa, y automatizar desde las luces hasta las llaves de paso de gas y agua. Todo con equipos reales,
+                            en un laboratorio completo.</p>
+                        <div class="nc-hero-acciones" data-oculta-sticky="hero">
+                            <a class="nc-btn" href="#registro">Registrarme como interesado</a>
+                            <a class="nc-link" href="#clases">Ver las 4 clases</a>
+                        </div>
+                        <p class="nc-nota">Inscripciones muy pronto. Registrarte no tiene costo ni compromiso.</p>
+                        <dl class="nc-ficha">
+                            <div><dt>Duración</dt>
+                                <dd>16 horas</dd>
+                            </div>
+                            <div><dt>Clases</dt>
+                                <dd>4 de 4 horas</dd>
+                            </div>
+                            <div><dt>Cupos</dt>
+                                <dd>6 por grupo</dd>
+                            </div>
+                            <div><dt>Lugar</dt>
+                                <dd>Manizales</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="nc-demo" data-demo>
+                        <svg class="nc-halo" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="ncGradHalo" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3FDCF2"/>
+                <stop offset=".55" stop-color="#7C5CF0"/>
+                <stop offset="1" stop-color="#A48BFA"/>
+              </linearGradient>
+              <filter id="ncBrillo" x="-25%" y="-25%" width="150%" height="150%"><feGaussianBlur stdDeviation="7"/></filter>
+            </defs>
+            <circle cx="200" cy="200" r="182" fill="none" stroke="url(#ncGradHalo)" stroke-width="9" filter="url(#ncBrillo)" opacity=".75"/>
+            <circle cx="200" cy="200" r="182" fill="none" stroke="url(#ncGradHalo)" stroke-width="1.6"/>
+          </svg>
+
+                        <div class="nc-demo-card">
+                            <div class="nc-tabs" role="tablist" aria-label="Ejemplos de lo que vas a programar">
+                                <button class="nc-tab" type="button" role="tab" id="nc-tab-escena" aria-selected="true" aria-controls="nc-panel-escena">Escena</button>
+                                <button class="nc-tab" type="button" role="tab" id="nc-tab-auto" aria-selected="false" aria-controls="nc-panel-auto" tabindex="-1">Automatización</button>
+                            </div>
+
+                            <div class="nc-panel" role="tabpanel" id="nc-panel-escena" aria-labelledby="nc-tab-escena" data-hecho="Escena ejecutada">
+                                <p class="nc-demo-tit">Salir de casa</p>
+                                <p class="nc-disparo">Se activa con un toque o diciendo “Alexa, salgo de casa”.</p>
+                                <ol class="nc-lista">
+                                    <li class="nc-accion" data-antes="Encendidas" data-despues="Apagadas"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Luces</span><span class="nc-estado">Encendidas</span></li>
+                                    <li class="nc-accion" data-antes="Abiertas" data-despues="Cerradas"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Cortinas</span><span class="nc-estado">Abiertas</span></li>
+                                    <li class="nc-accion" data-antes="Encendido" data-despues="Apagado"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Televisor</span><span class="nc-estado">Encendido</span></li>
+                                    <li class="nc-accion" data-antes="Abierta" data-despues="Cerrada"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Llave de agua</span><span class="nc-estado">Abierta</span></li>
+                                    <li class="nc-accion" data-antes="Sin seguro" data-despues="Asegurada"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Cerradura</span><span class="nc-estado">Sin seguro</span></li>
+                                    <li class="nc-accion" data-antes="Desactivada" data-despues="Activada"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Alarma</span><span class="nc-estado">Desactivada</span></li>
+                                </ol>
+                                <div class="nc-demo-pie">
+                                    <button class="nc-run" type="button" data-run><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z" fill="currentColor"/></svg>Ejecutar escena</button>
+                                    <span class="nc-cuenta" data-cuenta>6 acciones</span>
+                                </div>
+                            </div>
+
+                            <div class="nc-panel" role="tabpanel" id="nc-panel-auto" aria-labelledby="nc-tab-auto" data-hecho="Automatización ejecutada" hidden>
+                                <p class="nc-demo-tit">Si se detecta humo</p>
+                                <p class="nc-disparo">Se activa sola cuando el detector de humo se dispara.</p>
+                                <ol class="nc-lista">
+                                    <li class="nc-accion" data-antes="En espera" data-despues="Enviada"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Alerta al celular</span><span class="nc-estado">En espera</span></li>
+                                    <li class="nc-accion" data-antes="Apagada" data-despues="Sonando"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Sirena</span><span class="nc-estado">Apagada</span></li>
+                                    <li class="nc-accion" data-antes="Abierta" data-despues="Cerrada"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Llave de gas</span><span class="nc-estado">Abierta</span></li>
+                                    <li class="nc-accion" data-antes="Con energía" data-despues="Sin energía"><span class="nc-led" aria-hidden="true"></span><span class="nc-disp">Tablero principal</span><span class="nc-estado">Con energía</span></li>
+                                </ol>
+                                <div class="nc-demo-pie">
+                                    <button class="nc-run" type="button" data-run><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 1.2v9.6L10.5 6z" fill="currentColor"/></svg>Simular detección</button>
+                                    <span class="nc-cuenta" data-cuenta>4 acciones</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="nc-demo-nota">Así se ve lo que vas a instalar y programar en el curso.</p>
+                        <p class="nc-sr" aria-live="polite" data-live></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ LO QUE VAS A APRENDER ============ -->
+            <section class="nc-sec" id="aprenderas" aria-labelledby="nc-t-aprender">
+                <div class="nc-wrap">
+                    <div class="nc-cab-split">
+                        <h2 class="nc-h2" id="nc-t-aprender">Lo que vas a aprender</h2>
+                        <p class="nc-intro">Un sistema domótico funciona en tres capas. Las aprendes en orden, de la red a la inteligencia, y en cada una practicas con equipos reales.</p>
+                    </div>
+
+                    <div class="nc-capas">
+                        <div class="nc-capa">
+                            <div>
+                                <div class="nc-capa-cab">
+                                    <span class="nc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M2.6 9.2a13.6 13.6 0 0 1 18.8 0"/><path d="M5.9 12.6a8.9 8.9 0 0 1 12.2 0"/><path d="M9.2 16a4.3 4.3 0 0 1 5.6 0"/><circle cx="12" cy="19.2" r="1.3" fill="currentColor" stroke="none"/></svg></span>
+                                    <h3>La red</h3>
+                                </div>
+                                <p class="nc-capa-desc">La base de todo: si la red falla, ningún dispositivo responde.</p>
+                            </div>
+                            <ul class="nc-items">
+                                <li>Configuración de routers y redes <span class="nc-nw">Wi-Fi</span> pensadas para domótica</li>
+                                <li>Redes mesh y cobertura en toda la casa</li>
+                                <li>Bandas de 2,4 y 5&nbsp;GHz y estabilidad de los dispositivos</li>
+                            </ul>
+                        </div>
+
+                        <div class="nc-capa">
+                            <div>
+                                <div class="nc-capa-cab">
+                                    <span class="nc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.8" width="14" height="18.4" rx="3"/><rect x="9" y="7" width="6" height="10" rx="1.6"/><path d="M12 9.4v2.2"/></svg></span>
+                                    <h3>Los dispositivos</h3>
+                                </div>
+                                <p class="nc-capa-desc">Instalación y conexión de equipos reales, con las medidas de seguridad y los requisitos técnicos adecuados.</p>
+                            </div>
+                            <ul class="nc-items nc-items--2">
+                                <li>Interruptores táctiles, dimmers y relés inteligentes</li>
+                                <li>Sensores de movimiento, presencia, puertas, ventanas y humo</li>
+                                <li>Cerraduras, cortinas, persianas y puertas de garaje</li>
+                                <li>Válvulas motorizadas para cerrar las llaves de paso de agua y gas</li>
+                                <li>Corte de energía del tablero principal</li>
+                            </ul>
+                        </div>
+
+                        <div class="nc-capa">
+                            <div>
+                                <div class="nc-capa-cab">
+                                    <span class="nc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="6" r="2.2"/><circle cx="18.5" cy="6" r="2.2"/><circle cx="12" cy="18" r="2.2"/><path d="M7.7 6h8.6M6.6 8 10.8 16M17.4 8 13.2 16"/></svg></span>
+                                    <h3>La inteligencia</h3>
+                                </div>
+                                <p class="nc-capa-desc">Lo que hace que la casa actúe sola, con un toque o con la voz.</p>
+                            </div>
+                            <ul class="nc-items nc-items--2">
+                                <li>Escenas con Smart Life y Tuya</li>
+                                <li>Rutinas y control por voz con Alexa</li>
+                                <li>Automatizaciones por horario, sensores y condiciones</li>
+                                <li>Control de TV, aire acondicionado y audio</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p class="nc-capas-pie"><strong>Y lo que pasa en obra:</strong> diagnóstico de fallas y solución de problemas reales de instalación y configuración.</p>
+                </div>
+            </section>
+
+            <!-- ============ LABORATORIO ============ -->
+            <section class="nc-sec" id="laboratorio" aria-labelledby="nc-t-lab">
+                <div class="nc-wrap">
+                    <div class="nc-cab-split">
+                        <h2 class="nc-h2" id="nc-t-lab">Un laboratorio completo para empezar desde cero</h2>
+                        <p class="nc-intro">Aquí está todo lo que vas a usar: dispositivos, red, herramientas y elementos de protección. Los grupos son de <strong>máximo 6 personas</strong>, para que todos instalen, configuren y prueben con sus propias manos.</p>
+                    </div>
+
+                    <div class="nc-rack">
+                        <div class="nc-mod">
+                            <h3>Control e iluminación</h3>
+                            <ul>
+                                <li>Interruptores táctiles <span class="nc-nw">Wi-Fi</span> de 1 a 6 botones</li>
+                                <li>Dimmers y relés de atenuación</li>
+                                <li>Módulos de contacto seco y mini relés</li>
+                                <li>Tomacorrientes inteligentes</li>
+                            </ul>
+                        </div>
+                        <div class="nc-mod">
+                            <h3>Sensores y seguridad</h3>
+                            <ul>
+                                <li>Sensores de movimiento</li>
+                                <li>Sensores de puertas y ventanas</li>
+                                <li>Detectores de humo y sirena</li>
+                                <li>Cerradura inteligente</li>
+                            </ul>
+                        </div>
+                        <div class="nc-mod">
+                            <h3>Agua, gas y energía</h3>
+                            <ul>
+                                <li>Válvula motorizada para agua</li>
+                                <li>Electroválvulas</li>
+                                <li>Válvula de gas <span class="nc-nw">Wi-Fi</span></li>
+                                <li>Breaker <span class="nc-nw">Wi-Fi</span> para el tablero</li>
+                            </ul>
+                        </div>
+                        <div class="nc-mod">
+                            <h3>Confort</h3>
+                            <ul>
+                                <li>Motor de cortina y persiana enrollable</li>
+                                <li>Abridor de puerta de garaje</li>
+                                <li>Control IR y RF para TV y aire acondicionado</li>
+                                <li>Planta de sonido y parlantes</li>
+                            </ul>
+                        </div>
+                        <div class="nc-mod">
+                            <h3>Red y control</h3>
+                            <ul>
+                                <li>Routers <span class="nc-nw">Wi-Fi 6</span> y sistema mesh</li>
+                                <li>Switch y rack de comunicaciones</li>
+                                <li>Alexa con Echo Hub y Echo Pop</li>
+                                <li>Tablets de configuración</li>
+                            </ul>
+                        </div>
+                        <div class="nc-mod">
+                            <h3>Herramientas y protección</h3>
+                            <ul>
+                                <li>Multímetros y detectores de voltaje</li>
+                                <li>Herramienta de mano para cada práctica</li>
+                                <li>Guantes dieléctricos</li>
+                                <li>Gafas de seguridad</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ CLASES ============ -->
+            <section class="nc-sec" id="clases" aria-labelledby="nc-t-clases">
+                <div class="nc-wrap">
+                    <div class="nc-cab-split">
+                        <h2 class="nc-h2" id="nc-t-clases">4 clases, 16 horas</h2>
+                        <p class="nc-intro">Cada clase dura 4 horas y combina fundamentos con práctica en el laboratorio, a partir de casos reales de obra. Al final demuestras lo aprendido con una instalación que funcione.</p>
+                    </div>
+
+                    <ol class="nc-clases">
+                        <li class="nc-clase">
+                            <span class="nc-num" aria-hidden="true">1</span>
+                            <div>
+                                <h3><span class="nc-sr">Clase 1: </span>Fundamentos y red <span class="nc-nw">Wi-Fi</span></h3>
+                                <ul>
+                                    <li>Cómo funciona un sistema domótico</li>
+                                    <li>Router, red mesh y bandas de 2,4 y 5&nbsp;GHz</li>
+                                    <li>Seguridad en la instalación</li>
+                                    <li>Primeros dispositivos en Smart Life y Tuya</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nc-clase">
+                            <span class="nc-num" aria-hidden="true">2</span>
+                            <div>
+                                <h3><span class="nc-sr">Clase 2: </span>Instalación de dispositivos</h3>
+                                <ul>
+                                    <li>Interruptores, dimmers y relés en caja</li>
+                                    <li>Contacto seco y tomacorrientes</li>
+                                    <li>Sensores de movimiento, puertas y humo</li>
+                                    <li>Cortinas, persianas, garaje y cerradura</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nc-clase">
+                            <span class="nc-num" aria-hidden="true">3</span>
+                            <div>
+                                <h3><span class="nc-sr">Clase 3: </span>Escenas, automatizaciones y Alexa</h3>
+                                <ul>
+                                    <li>Escenas de un toque</li>
+                                    <li>Automatizaciones por horario y sensores</li>
+                                    <li>Rutinas y control por voz con Alexa</li>
+                                    <li>Control de TV, aire y audio</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nc-clase nc-clase--final">
+                            <span class="nc-num" aria-hidden="true">4</span>
+                            <div>
+                                <h3><span class="nc-sr">Clase 4: </span>Agua, gas, energía y proyecto final</h3>
+                                <ul>
+                                    <li>Cierre de llaves de paso de agua y gas</li>
+                                    <li>Corte de energía del tablero principal</li>
+                                    <li>Diagnóstico de fallas reales</li>
+                                    <li class="nc-eval">Evaluación: instalas una escena o automatización funcional</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- ============ PARA QUIÉN ============ -->
+            <section class="nc-sec" id="para-quien" aria-labelledby="nc-t-quien">
+                <div class="nc-wrap">
+                    <div class="nc-cab-split">
+                        <h2 class="nc-h2" id="nc-t-quien">¿Para quién es?</h2>
+                        <p class="nc-intro">Para quienes ya trabajan con electricidad y quieren sumar la domótica a lo que ofrecen. Cada vez más hogares y negocios buscan espacios inteligentes, y necesitan a alguien que sepa instalarlos bien.</p>
+                    </div>
+
+                    <ul class="nc-perfiles">
+                        <li class="nc-perfil">
+                            <h3>Electricistas</h3>
+                            <p>Suma la domótica a tus instalaciones y ofrece un servicio nuevo a tus clientes.</p>
+                        </li>
+                        <li class="nc-perfil">
+                            <h3>Técnicos, tecnólogos e instaladores</h3>
+                            <p>Amplía tus competencias con la tecnología que hoy piden hogares y negocios.</p>
+                        </li>
+                        <li class="nc-perfil">
+                            <h3>Ingenieros</h3>
+                            <p>Integra red, dispositivos y automatización en tus proyectos.</p>
+                        </li>
+                        <li class="nc-perfil">
+                            <h3>Arquitectos</h3>
+                            <p>Proyecta espacios inteligentes desde el diseño, sabiendo cómo se instalan.</p>
+                        </li>
+                    </ul>
+
+                    <div class="nc-requisito">
+                        <span class="nc-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M13.2 2.5 4.8 13.6h6.4l-1 7.9 8.4-11.1h-6.4z"/></svg></span>
+                        <div>
+                            <p><strong>Requisito de ingreso:</strong> conocimientos previos en electricidad, demostrables con formación, experiencia o habilidades técnicas.</p>
+                            <p>Es domótica desde cero, no electricidad desde cero.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ REGISTRO ============ -->
+            <section class="nc-sec nc-registro" id="registro" aria-labelledby="nc-t-registro" data-oculta-sticky="registro">
+                <div class="nc-wrap nc-registro-grid">
+                    <div class="nc-registro-txt">
+                        <h2 class="nc-h2" id="nc-t-registro">Regístrate como interesado</h2>
+                        <p class="nc-intro">Las inscripciones abren muy pronto. Déjanos tus datos y te escribimos por WhatsApp con las fechas y las condiciones del próximo grupo.</p>
+                        <ol class="nc-pasos">
+                            <li>Llenas tus datos.</li>
+                            <li>Se abre WhatsApp con el mensaje listo y solo lo envías.</li>
+                            <li>Te avisamos primero cuando abran las inscripciones.</li>
+                        </ol>
+                        <p class="nc-nota">Registrarte no tiene costo ni compromiso.</p>
+                    </div>
+
+                    <div>
+                        <form class="nc-form" data-form novalidate>
+                            <div class="nc-campo">
+                                <label for="nc-nombre">Nombre completo</label>
+                                <input class="nc-input" id="nc-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="nc-nombre-error">
+                                <p class="nc-error" id="nc-nombre-error" hidden>Escribe tu nombre completo.</p>
+                            </div>
+                            <div class="nc-dos">
+                                <div class="nc-campo">
+                                    <label for="nc-whatsapp">WhatsApp</label>
+                                    <input class="nc-input" id="nc-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej. 300 123 4567" required aria-describedby="nc-whatsapp-error">
+                                    <p class="nc-error" id="nc-whatsapp-error" hidden>Escribe un número válido, por ejemplo 300&nbsp;123&nbsp;4567.</p>
+                                </div>
+                                <div class="nc-campo">
+                                    <label for="nc-ciudad">Ciudad</label>
+                                    <input class="nc-input" id="nc-ciudad" name="ciudad" type="text" autocomplete="address-level2" placeholder="Ej. Manizales" required aria-describedby="nc-ciudad-error">
+                                    <p class="nc-error" id="nc-ciudad-error" hidden>Escribe tu ciudad.</p>
+                                </div>
+                            </div>
+                            <div class="nc-campo">
+                                <label for="nc-oficio">¿A qué te dedicas?</label>
+                                <select class="nc-input" id="nc-oficio" name="oficio" required aria-describedby="nc-oficio-error">
+                <option value="">Elige una opción</option>
+                <option>Electricista</option>
+                <option>Técnico</option>
+                <option>Tecnólogo</option>
+                <option>Ingeniero</option>
+                <option>Arquitecto</option>
+                <option>Instalador</option>
+                <option>Otro</option>
+              </select>
+                                <p class="nc-error" id="nc-oficio-error" hidden>Elige a qué te dedicas.</p>
+                            </div>
+                            <fieldset class="nc-campo">
+                                <legend>¿Qué horario te queda mejor? <span>(opcional)</span></legend>
+                                <div class="nc-opciones">
+                                    <label class="nc-opcion"><input type="radio" name="horario" value="Entre semana"><span>Entre semana</span></label>
+                                    <label class="nc-opcion"><input type="radio" name="horario" value="Fines de semana"><span>Fines de semana</span></label>
+                                    <label class="nc-opcion"><input type="radio" name="horario" value="Cualquiera"><span>Cualquiera</span></label>
+                                </div>
+                            </fieldset>
+                            <div class="nc-campo">
+                                <label class="nc-check" for="nc-autorizo"><input id="nc-autorizo" name="autorizo" type="checkbox" required aria-describedby="nc-autorizo-error"><span>Autorizo a NOOVA Academy a usar mis datos solo para contactarme sobre el curso.</span></label>
+                                <p class="nc-error" id="nc-autorizo-error" hidden>Marca la autorización para que podamos escribirte.</p>
+                            </div>
+                            <button class="nc-btn nc-btn--full" type="submit">Registrarme como interesado</button>
+                            <p class="nc-form-nota">Al tocar el botón se abre WhatsApp con tus datos.</p>
+                        </form>
+
+                        <div class="nc-exito" data-exito tabindex="-1" hidden>
+                            <div data-normal>
+                                <h3>Ya casi está</h3>
+                                <p>Se abrió WhatsApp con tu mensaje listo. Envíalo y quedas registrado como interesado: te avisamos primero cuando abran las inscripciones.</p>
+                            </div>
+                            <div data-aviso hidden>
+                                <h3>Falta configurar el WhatsApp</h3>
+                                <p>Este formulario todavía no tiene el número de WhatsApp de NOOVA. Cuando esté configurado, este es el mensaje que va a llegar:</p>
+                                <pre data-mensaje></pre>
+                            </div>
+                            <div class="nc-exito-acciones">
+                                <a class="nc-btn" data-wa href="#" target="_blank" rel="noopener">Abrir WhatsApp otra vez</a>
+                                <button class="nc-link-btn" type="button" data-volver>Corregir mis datos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============ PREGUNTAS ============ -->
+            <section class="nc-sec" id="preguntas" aria-labelledby="nc-t-faq">
+                <div class="nc-wrap nc-faq-grid">
+                    <h2 class="nc-h2" id="nc-t-faq">Preguntas frecuentes</h2>
+                    <div class="nc-faq">
+                        <details>
+                            <summary>¿Necesito saber de domótica?</summary>
+                            <p>No. Empiezas desde cero en domótica. Lo que sí necesitas son bases de electricidad, porque vas a instalar y conectar dispositivos reales.</p>
+                        </details>
+                        <details>
+                            <summary>¿Con qué aplicaciones se trabaja?</summary>
+                            <p>Con Smart Life y Tuya para configurar dispositivos, escenas y automatizaciones, y con Alexa para las rutinas y el control por voz. Google Home se ve como complemento.</p>
+                        </details>
+                        <details>
+                            <summary>¿Tengo que comprar equipos?</summary>
+                            <p>No para el curso. El laboratorio tiene todos los equipos que vas a usar: dispositivos, red, herramientas y elementos de protección.</p>
+                        </details>
+                        <details>
+                            <summary>¿Cuántas personas hay por grupo?</summary>
+                            <p>Máximo 6, para que todos practiquen y tengan acompañamiento durante cada clase.</p>
+                        </details>
+                        <details>
+                            <summary>¿Dónde y cuándo es?</summary>
+                            <p>Es presencial, en Manizales. Las fechas del próximo grupo se anuncian primero a quienes se registran como interesados.</p>
+                        </details>
+                        <details>
+                            <summary>¿Cómo termina el curso?</summary>
+                            <p>Con una evaluación práctica: instalas y dejas funcionando una escena o una automatización.</p>
+                        </details>
+                        <details>
+                            <summary>¿Registrarme me compromete a pagar?</summary>
+                            <p>No. El registro solo sirve para avisarte las fechas y condiciones del próximo grupo. Después tú decides si te inscribes.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="nc-foot" data-oculta-sticky="pie">
+            <div class="nc-wrap nc-foot-in">
+                <a class="nc-marca" href="index.html" aria-label="NOOVA Academy, inicio">
+                    <img class="nc-marca-logo" src="assets/img/noova-logo.png" alt="">
+                    <span class="nc-marca-txt"><b>NOOVA</b><span>ACADEMY</span></span>
+                </a>
+                <p>Una línea de formación de NOOVA Designs. Manizales, Colombia.</p>
+                <nav class="nc-redes" aria-label="Redes sociales">
+                    <a href="https://www.instagram.com/noova.domotica/" target="_blank" rel="noopener">Instagram</a>
+                    <a href="https://web.facebook.com/noovadomoticaeiluminacioninteligente" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://www.youtube.com/@noovadomotica" target="_blank" rel="noopener">YouTube</a>
+                </nav>
+            </div>
+            <p class="nc-credit">© Vanmartc Developments</p>
+        </footer>
+
+        <div class="nc-sticky" data-sticky>
+            <a class="nc-btn nc-btn--full" href="#registro">Registrarme como interesado</a>
+        </div>
+
+    </div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/curso.js"></script>
+    <script src="assets/js/curso-lights.js"></script>
+</body>
+
+</html>

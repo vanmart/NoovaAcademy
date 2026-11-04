@@ -1,0 +1,8 @@
+header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;font-weight:500;font-size:20px;line-height:1.6;letter-spacing:.42em;color:var(--text,#F4F0EB);text-decoration:none}
+.brand{display:inline-flex;align-items:center;gap:12px}
+.brand-logo{display:block;width:40px;height:40px;flex:none;object-fit:contain}
+.brand span{letter-spacing:.3em;font-size:12px;margin-left:.9em;color:var(--cyan,#93F4F8)}
+@supports (background-clip:text) or (-webkit-background-clip:text){.brand span{background:var(--logo,linear-gradient(110deg,#93F4F8,#AD48FB));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}}
+@media (max-width:767px){.brand{font-size:17px}.brand span{display:none}}
+@media (prefers-reduced-motion:no-preference){.brand{animation:site-header-rise .9s ease .2s both}@keyframes site-header-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}}
